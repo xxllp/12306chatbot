@@ -1,0 +1,1446 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "你好"
+      },
+      {
+        "intent": "greet",
+        "text": "您好"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "拜拜"
+      },
+      {
+        "intent": "goodbye",
+        "text": "再见"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 2,
+            "end": 3,
+            "value": "去",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "北京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "我要去北京，帮查下票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "合肥",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "去",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "北京",
+            "entity": "endcity"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "value": "明天",
+            "entity": "day"
+          }
+        ],
+        "text": "合肥去北京明天的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "深圳",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "广州",
+            "entity": "endcity"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "value": "四月1号",
+            "entity": "day"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "上午",
+            "entity": "time"
+          }
+        ],
+        "text": "深圳到广州四月1号上午的高铁票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "上海",
+            "entity": "endcity"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "value": "5月2号",
+            "entity": "day"
+          }
+        ],
+        "text": "北京到上海5月2号的票还有几张"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "上海",
+            "entity": "startcity"
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "value": "南京",
+            "entity": "endcity"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "value": "4月2号",
+            "entity": "day"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "value": "晚上",
+            "entity": "time"
+          }
+        ],
+        "text": "查下上海到南京 4月2号晚上的动车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "武汉",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "成都",
+            "entity": "endcity"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "今晚",
+            "entity": "time"
+          }
+        ],
+        "text": "武汉到成都 今晚的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 6,
+            "value": "哈尔滨",
+            "entity": "endcity"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "明天",
+            "entity": "day"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "value": "下午",
+            "entity": "time"
+          }
+        ],
+        "text": "北京到哈尔滨明天下午的火车"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "杭州",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 17,
+            "end": 19,
+            "value": "后天",
+            "entity": "day"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "value": "下午",
+            "entity": "time"
+          }
+        ],
+        "text": "杭州到[上海] (endcity)后天下午的火车"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "value": "明天",
+            "entity": "day"
+          }
+        ],
+        "text": "北京到 [长沙] (endcity) 明天的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "合肥",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "北京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "合肥到北京的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "深圳",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "广州",
+            "entity": "endcity"
+          }
+        ],
+        "text": "深圳到广州的高铁票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "去",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "上海",
+            "entity": "endcity"
+          }
+        ],
+        "text": "北京去上海的票还有几张"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "上海",
+            "entity": "startcity"
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "去",
+            "entity": "to"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "value": "南京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "查下上海去南京 的动车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "武汉",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "去",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "成都",
+            "entity": "endcity"
+          }
+        ],
+        "text": "武汉去成都 的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "去",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 6,
+            "value": "哈尔滨",
+            "entity": "endcity"
+          }
+        ],
+        "text": "北京去哈尔滨的火车"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "杭州",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "去",
+            "entity": "to"
+          }
+        ],
+        "text": "杭州去[上海] (endcity)的火车"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "startcity"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "value": "去",
+            "entity": "to"
+          }
+        ],
+        "text": "北京去[长沙] (endcity) 的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 4,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "北京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "查询下到北京的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "明天",
+            "entity": "day"
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "去",
+            "entity": "to"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "value": "上海",
+            "entity": "endcity"
+          }
+        ],
+        "text": "查询明天去上海的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "周日",
+            "entity": "day"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "value": "天津",
+            "entity": "startcity"
+          },
+          {
+            "start": 7,
+            "end": 8,
+            "value": "回",
+            "entity": "to"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "value": "北京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "我要周日从天津回北京的动车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "周五",
+            "entity": "day"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "value": "天津",
+            "entity": "startcity"
+          },
+          {
+            "start": 7,
+            "end": 8,
+            "value": "回",
+            "entity": "to"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "value": "北京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "我要周五从天津回北京的动车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "常州",
+            "entity": "startcity"
+          },
+          {
+            "start": 5,
+            "end": 6,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "南京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "我要从常州到南京的高铁票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "开往",
+            "entity": "to"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "北京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "我要买张开往北京的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 2,
+            "end": 3,
+            "value": "去",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "上海",
+            "entity": "endcity"
+          }
+        ],
+        "text": "查下去上海的票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "到",
+            "entity": "to"
+          },
+          {
+            "start": 1,
+            "end": 3,
+            "value": "北京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "到北京的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 2,
+            "end": 3,
+            "value": "去",
+            "entity": "to"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "上海",
+            "entity": "endcity"
+          }
+        ],
+        "text": "买张去上海的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "开往",
+            "entity": "to"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "北京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "买张开往北京的火车票"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "明天",
+            "entity": "day"
+          }
+        ],
+        "text": "明天"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "今天",
+            "entity": "day"
+          }
+        ],
+        "text": "今天"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "5月1号",
+            "entity": "day"
+          }
+        ],
+        "text": "5月1号"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "10月3号",
+            "entity": "day"
+          }
+        ],
+        "text": "10月3号"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "12月17号",
+            "entity": "day"
+          }
+        ],
+        "text": "12月17号"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "后天",
+            "entity": "day"
+          }
+        ],
+        "text": "后天"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "大后天",
+            "entity": "day"
+          }
+        ],
+        "text": "大后天"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "明天",
+            "entity": "day"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "下午",
+            "entity": "time"
+          }
+        ],
+        "text": "明天下午"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "明天",
+            "entity": "day"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "早上",
+            "entity": "time"
+          }
+        ],
+        "text": "明天早上"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "明天",
+            "entity": "day"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "晚上",
+            "entity": "time"
+          }
+        ],
+        "text": "明天晚上"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "今天",
+            "entity": "day"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "下午",
+            "entity": "time"
+          }
+        ],
+        "text": "今天下午"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "今天",
+            "entity": "day"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "晚上",
+            "entity": "time"
+          }
+        ],
+        "text": "今天晚上"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "5月1号",
+            "entity": "day"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "早上",
+            "entity": "time"
+          }
+        ],
+        "text": "5月1号早上"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "5月1号",
+            "entity": "day"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "下午",
+            "entity": "time"
+          }
+        ],
+        "text": "5月1号下午"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "5月1号",
+            "entity": "day"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "晚上",
+            "entity": "time"
+          }
+        ],
+        "text": "5月1号晚上"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "明天",
+            "entity": "day"
+          }
+        ],
+        "text": "明天的呢"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "明天",
+            "entity": "day"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "下午",
+            "entity": "time"
+          }
+        ],
+        "text": "明天下午的呢"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "周一",
+            "entity": "day"
+          }
+        ],
+        "text": "周一"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "周二",
+            "entity": "day"
+          }
+        ],
+        "text": "周二"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "周三",
+            "entity": "day"
+          }
+        ],
+        "text": "周三"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "周四",
+            "entity": "day"
+          }
+        ],
+        "text": "周四"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "周五",
+            "entity": "day"
+          }
+        ],
+        "text": "周五"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "周六",
+            "entity": "day"
+          }
+        ],
+        "text": "周六"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "周日",
+            "entity": "day"
+          }
+        ],
+        "text": "周日"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "下周一",
+            "entity": "day"
+          }
+        ],
+        "text": "下周一"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "下周二",
+            "entity": "day"
+          }
+        ],
+        "text": "下周二"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "下周三",
+            "entity": "day"
+          }
+        ],
+        "text": "下周三"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "下周四",
+            "entity": "day"
+          }
+        ],
+        "text": "下周四"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "下周五",
+            "entity": "day"
+          }
+        ],
+        "text": "下周五"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "下周六",
+            "entity": "day"
+          }
+        ],
+        "text": "下周六"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "下周日",
+            "entity": "day"
+          }
+        ],
+        "text": "下周日"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "合肥",
+            "entity": "startcity"
+          }
+        ],
+        "text": "合肥"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "深圳",
+            "entity": "startcity"
+          }
+        ],
+        "text": "深圳"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "沈阳",
+            "entity": "startcity"
+          }
+        ],
+        "text": "沈阳"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "武汉",
+            "entity": "startcity"
+          }
+        ],
+        "text": "武汉"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "太原",
+            "entity": "startcity"
+          }
+        ],
+        "text": "太原"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "西安",
+            "entity": "startcity"
+          }
+        ],
+        "text": "西安"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "西宁",
+            "entity": "startcity"
+          }
+        ],
+        "text": "西宁"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "九江",
+            "entity": "startcity"
+          }
+        ],
+        "text": "九江"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "黄山",
+            "entity": "startcity"
+          }
+        ],
+        "text": "黄山"
+      },
+      {
+        "intent": "queryTrain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "衡阳",
+            "entity": "startcity"
+          }
+        ],
+        "text": "衡阳"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "endcity"
+          }
+        ],
+        "text": "北京"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "广州",
+            "entity": "endcity"
+          }
+        ],
+        "text": "广州"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "成都",
+            "entity": "endcity"
+          }
+        ],
+        "text": "成都"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "深圳",
+            "entity": "endcity"
+          }
+        ],
+        "text": "深圳"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "沈阳",
+            "entity": "endcity"
+          }
+        ],
+        "text": "沈阳"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "武汉",
+            "entity": "endcity"
+          }
+        ],
+        "text": "武汉"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "太原",
+            "entity": "endcity"
+          }
+        ],
+        "text": "太原"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "西安",
+            "entity": "endcity"
+          }
+        ],
+        "text": "西安"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "西宁",
+            "entity": "endcity"
+          }
+        ],
+        "text": "西宁"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "九江",
+            "entity": "endcity"
+          }
+        ],
+        "text": "九江"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "黄山",
+            "entity": "endcity"
+          }
+        ],
+        "text": "黄山"
+      },
+      {
+        "intent": "getEndCity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "衡阳",
+            "entity": "endcity"
+          }
+        ],
+        "text": "衡阳"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "谢谢"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "多谢"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "感谢"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "非常高兴呢"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "多谢~~"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "你真棒"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "thanks"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "很好"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "非常感谢"
+      },
+      {
+        "intent": "getEndCity",
+        "text": "我的神，你真棒"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [
+      {
+        "name": "startcity",
+        "elements": "data/city.txt"
+      },
+      {
+        "name": "endcity",
+        "elements": "data/city.txt"
+      }
+    ],
+    "entity_synonyms": []
+  }
+}

@@ -1,0 +1,75 @@
+%YAML 1.1
+---
+actions:
+- utter_goodbye
+- utter_default
+- utter_getEndCity
+- utter_help
+- utter_greet
+- action_getTrain
+- utter_getDay
+- utter_thx
+- utter_getStartCity
+config:
+  store_entities_as_slots: true
+entities:
+- endcity
+- to
+- time
+- day
+- startcity
+forms: []
+intents:
+- queryTrain:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thx:
+    use_entities: true
+- getDay:
+    use_entities: true
+- getStartCity:
+    use_entities: true
+- getEndCity:
+    use_entities: true
+slots:
+  day:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  endcity:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  startcity:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  time:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  to:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_default:
+  - text: 不好意思，我没能听懂您的意思，请你换一种说法~
+  utter_getDay:
+  - text: 需要查询的时间是哪天
+  utter_getEndCity:
+  - text: 请问到哪里去
+  utter_getStartCity:
+  - text: 请问从哪里出发
+  utter_goodbye:
+  - text: 再见。
+  - text: bye, 为您服务很愉快。
+  utter_greet:
+  - text: 您好!我是12306 小智机器人，能够帮你查询各种火车票信息~
+  utter_help:
+  - text: 请输入你要要查询的火车票起始站和时间
+  utter_thx:
+  - text: 不客气，我可是一直很聪明的呢
